@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-     "dev": "parcel src/index.html",
+    "dev": "parcel src/index.html",
     "build": "parcel build src/index.html"
   },
   "repository": {
@@ -20,5 +20,21 @@
   "homepage": "https://github.com/ganenkodmitrii/goit-js-hw-10-food-service#readme",
   "devDependencies": {
     "parcel-bundler": "^1.12.4"
+  },
+  "dependencies": {
+    "parcel-plugin-custom-dist-structure": "^1.1.16",
+    "parcel-plugin-nuke-dist": "^1.0.1"
+  },
+   "customDistStructure": {
+    "config": {
+      ".css": "css",
+      ".js": "js",
+      "images": [
+        ".jpg",
+        ".svg",
+        ".png"
+      ]
+    }
   }
+
 }

@@ -7,8 +7,11 @@ const Theme = {
   DARK: 'dark-theme',
 };
 
+// Изменение темы
+
 refs.toggleTheme.addEventListener('change', onToggleChangeTheme)
 updateTheme();
+
 function onToggleChangeTheme() {
   if (refs.toggleTheme.checked) {
     document.body.classList.add(Theme.DARK);
